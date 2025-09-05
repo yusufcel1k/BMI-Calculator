@@ -1,11 +1,13 @@
 import tkinter
 
 #window
+
 screen = tkinter.Tk()
 screen.minsize(300,300)
 screen.title("BMI Calculator")
 
 #text&entry
+
 label1 = tkinter.Label(screen, text="Enter your weight (kg):")
 label1.place(x=150-63, y=80+10.5)
 entry1 = tkinter.Entry(screen)
