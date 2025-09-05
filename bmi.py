@@ -1,5 +1,4 @@
 import tkinter
-from urllib.response import addbase
 
 #window
 
@@ -23,12 +22,11 @@ entry2.place(x=150-62, y=130.5+19)
 def calculate():
     try:
         weight = float(entry1.get())
-        height_cm = float(entry2.get())
-        height_m = height_cm / 100
-        bmi = weight / (height_m ** 2)
+        height = float(entry2.get())
+        m = height / 100
+        bmi = weight / (m ** 2)
         outputlabel.config(text=f"BMI: {bmi:.2f}")
 
-        # BMI'ye göre tavsiye
         if bmi < 18.5:
             advicelabel.config(text="Eat more healthy foods")
         elif bmi < 25:
